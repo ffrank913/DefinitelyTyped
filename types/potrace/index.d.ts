@@ -97,5 +97,5 @@ export class Potrace {
     setParameters(params: PotraceOptions): void;
     getSVG(): string;
     getSymbol(id: string): string;
-    getPathTag(fillColor: string, scale: number): string;
+    getPathTag(fillColor: string, scale?: {x: number, y: number}): string;
 }
