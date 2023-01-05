@@ -9,6 +9,8 @@ potrace.loadImage('', (potrace, err) => {
 });
 
 const potraceSvg: string = potrace.getSVG();
+const potracePath: string = potrace.getTagPath('black');
+const potracePathScaled: string = potrace.getTagPath('black', {x: 1.0, y: 0.5);
 
 // Postererizer
 const posterizerOpts: PosterizerOptions = {
